@@ -1,0 +1,15 @@
+Scanning dependencies of target region_growing
+[ 50%] Building CXX object CMakeFiles/region_growing.dir/src/region_growing.cpp.o
+/home/giorgio/Dropbox/Creazione_moduli_tesi/Modulo di segmentazione/src/region_growing.cpp: In function ‘int main(int, char**)’:
+/home/giorgio/Dropbox/Creazione_moduli_tesi/Modulo di segmentazione/src/region_growing.cpp:208:9: error: ‘class pcl::SupervoxelClustering<pcl::PointXYZRGBA>’ has no member named ‘setUseSingleCameraTransform’
+   super.setUseSingleCameraTransform (false);
+         ^
+/home/giorgio/Dropbox/Creazione_moduli_tesi/Modulo di segmentazione/src/region_growing.cpp:239:3: error: ‘Point’ was not declared in this scope
+   Point
+   ^
+CMakeFiles/region_growing.dir/build.make:57: set di istruzioni per l'obiettivo "CMakeFiles/region_growing.dir/src/region_growing.cpp.o" non riuscito
+make[2]: *** [CMakeFiles/region_growing.dir/src/region_growing.cpp.o] Errore 1
+CMakeFiles/Makefile2:63: set di istruzioni per l'obiettivo "CMakeFiles/region_growing.dir/all" non riuscito
+make[1]: *** [CMakeFiles/region_growing.dir/all] Errore 2
+Makefile:75: set di istruzioni per l'obiettivo "all" non riuscito
+make: *** [all] Errore 2
