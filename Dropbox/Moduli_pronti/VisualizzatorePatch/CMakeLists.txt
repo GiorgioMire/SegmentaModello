@@ -1,0 +1,33 @@
+
+cmake_minimum_required(VERSION 2.8)
+
+project(VisualizzaPatch)
+
+
+#Set variables 
+set(CD ${CMAKE_CURRENT_SOURCE_DIR})
+set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/)
+set(LOCAL_INCLUDE  /usr/local/include/)
+message("Variabili dei percorsi impostate")
+
+
+find_package(PCL 1.8 REQUIRED)
+
+
+include_directories(${PCL_INCLUDE_DIRS} ${CD}/include ${LOCAL_INCLUDE}/eigen3/)
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+message("Libreria PCL trovata")
+
+
+
+
+SET(CMAKE_CXX_FLAGS "-std=c++0x")
+
+add_library(VisualizzatorePatch_lib  ${SRC}/VisualizzatorePatch.cpp)
+
+add_executable (VisualizzatorePatch_exe
+${SRC}/main.cpp)
+
+
+target_link_libraries (VisualizzatorePatch_exe ${PCL_LIBRARIES} VisualizzatorePatch_lib )

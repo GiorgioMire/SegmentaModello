@@ -1,0 +1,2 @@
+/home/giorgio/Dropbox/Moduli_pronti/VisualizzatorePatch/CMakeFiles/VisualizzatorePatch_exe.dir
+/home/giorgio/Dropbox/Moduli_pronti/VisualizzatorePatch/CMakeFiles/VisualizzatorePatch_lib.dir

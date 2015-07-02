@@ -1,0 +1,2 @@
+/usr/bin/ar cr libVisualizzatorePatch_lib.a  CMakeFiles/VisualizzatorePatch_lib.dir/src/VisualizzatorePatch.cpp.o
+/usr/bin/ranlib libVisualizzatorePatch_lib.a
